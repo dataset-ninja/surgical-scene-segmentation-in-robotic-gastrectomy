@@ -13,37 +13,37 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = None
-PROJECT_NAME_FULL: str = None
+PROJECT_NAME: str = "Surgical Scene Segmentation in Robotic Gastrectomy"
+PROJECT_NAME_FULL: str = "Surgical Scene Segmentation in Robotic Gastrectomy with Real and Synthetic Data"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = None
-APPLICATIONS: List[Union[Industry, Domain, Research]] = None
-CATEGORY: Category = None
+LICENSE: License = License.BSD_3_Clause()
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Medical(),Industry.Robotics()]
+CATEGORY: Category = Category.Medical(extra=Category.Robotics())
 
-CV_TASKS: List[CVTask] = None
-ANNOTATION_TYPES: List[AnnotationType] = None
+CV_TASKS: List[CVTask] = [CVTask.InstanceSegmentation(),CVTask.SemanticSegmentation(),CVTask.ObjectDetection()]
+ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.InstanceSegmentation()]
 
 RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
-    RELEASE_YEAR: int = None
+    RELEASE_YEAR: int = 2022
 
-HOMEPAGE_URL: str = None
+HOMEPAGE_URL: str = "https://conferences.miccai.org/2022/papers/489-Paper2739.html"
 # e.g. "https://some.com/dataset/homepage"
 
 PREVIEW_IMAGE_ID: int = None
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
-GITHUB_URL: str = None
+GITHUB_URL: str = "https://github.com/dataset-ninja/surgical-scene-segmentation-in-robotic-gastrectomy"
 # URL to GitHub repo on dataset ninja (e.g. "https://github.com/dataset-ninja/some-dataset")
 
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = None
+DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = ["https://sisvse.github.io/"]
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
@@ -51,15 +51,15 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 # Use dict key to specify name for a button
-PAPER: Optional[Union[str, List[str], Dict[str, str]]] = None
+PAPER: Optional[Union[str, List[str], Dict[str, str]]] = ["https://rdcu.be/cVRXr"]
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
-REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
+REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"GitHub Page":"https://github.com/jihun-yoon/sisvse-dataset", "Kaggle Source":"https://www.kaggle.com/datasets/yjh4374/sisvse-dataset/"}
 
-CITATION_URL: Optional[str] = None
-AUTHORS: Optional[List[str]] = None
+CITATION_URL: Optional[str] = "https://link.springer.com/chapter/10.1007/978-3-031-16449-1_53"
+AUTHORS: Optional[List[str]] = ["Jihun Yoon", "SeulGi Hong", "Seungbum Hong", "Jiwon Lee", "Soyeon Shin", "Bokyung Park", "Nakjun Sung", "Hayeong Yu", "Sungjae Kim", "SungHyun Park", "Woo Jin Hyung", "Min-Kook Choi"]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = ["Hutom", "Yonsei University College of Medicine"]
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://hutom.io/", "https://medicine.yonsei.ac.kr/medicine-en/index.do"]
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = None
