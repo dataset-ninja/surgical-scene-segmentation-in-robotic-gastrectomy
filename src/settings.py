@@ -22,7 +22,7 @@ HIDE_DATASET = True  # set False when 100% sure about repo quality
 ##################################
 LICENSE: License = License.BSD_3_Clause()
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Medical(),Industry.Robotics()]
-CATEGORY: Category = Category.Medical(extra=Category.Robotics())
+CATEGORY: Category = Category.Medical(extra=Category.Robotics(), sensitive_content=True)
 
 CV_TASKS: List[CVTask] = [CVTask.InstanceSegmentation(),CVTask.SemanticSegmentation(),CVTask.ObjectDetection()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.InstanceSegmentation()]
@@ -34,7 +34,7 @@ if RELEASE_DATE is None:
 HOMEPAGE_URL: str = "https://conferences.miccai.org/2022/papers/489-Paper2739.html"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = None
+PREVIEW_IMAGE_ID: int = 6784916
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
 GITHUB_URL: str = "https://github.com/dataset-ninja/surgical-scene-segmentation-in-robotic-gastrectomy"
