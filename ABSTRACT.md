@@ -6,7 +6,7 @@ Authors compare state-of-the-art instance and semantic segmentation models train
 
 <img src="https://i.ibb.co/k6WRTn0/Screenshot-2023-10-06-160547.png" alt="image" width="800">
 
-<span style="font-size: smaller; font-style: italic;"> The schematic diagram of surgical scene segmentation using semantic image synthesis with a virtual surgery environment. SPADE [19] and SEAN [20] translate synthetic data generated from a virtual surgery environment photorealistically and are used for training surgical scene segmentation models. </span>
+<span style="font-size: smaller; font-style: italic;"> The schematic diagram of surgical scene segmentation using semantic image synthesis with a virtual surgery environment. [SPADE](https://openaccess.thecvf.com/content_CVPR_2019/html/Park_Semantic_Image_Synthesis_With_Spatially-Adaptive_Normalization_CVPR_2019_paper.html) and [SEAN](https://openaccess.thecvf.com/content_CVPR_2020/papers/Zhu_SEAN_Image_Synthesis_With_Semantic_Region-Adaptive_Normalization_CVPR_2020_paper.pdf) translate synthetic data generated from a virtual surgery environment photorealistically and are used for training surgical scene segmentation models. </span>
 
 The contribution of authors' work is summarized as follows: 
 - Authors release the ﬁrst large-scale instance and semantic segmentation dataset, including both real and synthetic data that can be used for visual object recognition and image-to-image translation research for gastrectomy with the dVSS. 
