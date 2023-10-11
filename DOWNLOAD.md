@@ -1,6 +1,6 @@
 Dataset **Surgical Scene Segmentation in Robotic Gastrectomy** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](Set 'HIDE_DATASET=False' to generate download link)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/w/F/JE/Qq7unm6RbvEFSxFteDr1pylbx0EDsfC5svv6aZkKcoM9VuZuToOL9PMNZ3iJ7H4lWMdaUAILUHVTOOz7CGKw9in8tjOpkWAUvbincijGZPfW2e4oY9CvtNaHnKMa.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
