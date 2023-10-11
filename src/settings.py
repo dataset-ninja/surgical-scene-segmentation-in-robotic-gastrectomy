@@ -53,7 +53,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # Use dict key to specify name for a button
 PAPER: Optional[Union[str, List[str], Dict[str, str]]] = ["https://rdcu.be/cVRXr"]
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
-REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"GitHub Page":"https://github.com/jihun-yoon/sisvse-dataset", "Kaggle Source":"https://www.kaggle.com/datasets/yjh4374/sisvse-dataset/"}
+REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"GitHub":"https://github.com/jihun-yoon/sisvse-dataset", "Kaggle":"https://www.kaggle.com/datasets/yjh4374/sisvse-dataset/"}
 
 CITATION_URL: Optional[str] = "https://link.springer.com/chapter/10.1007/978-3-031-16449-1_53"
 AUTHORS: Optional[List[str]] = ["Jihun Yoon", "SeulGi Hong", "Seungbum Hong", "Jiwon Lee", "Soyeon Shin", "Bokyung Park", "Nakjun Sung", "Hayeong Yu", "Sungjae Kim", "SungHyun Park", "Woo Jin Hyung", "Min-Kook Choi"]
@@ -62,7 +62,7 @@ ORGANIZATION_NAME: Optional[Union[str, List[str]]] = ["Hutom", "Yonsei Universit
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://hutom.io/", "https://medicine.yonsei.ac.kr/medicine-en/index.do"]
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
-SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {"__POSTTEXT__":"Also, the dataset contatins ***supercategory***, ***translation*** and ***syn*** tags"}
+SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {"__POSTTEXT__":"Also, the dataset contatins ***translation*** and ***syn*** tags for *sean_spade_translation* split, ***supercategory*** image tag (explore in supervisely advaned tool)"}
 TAGS: Optional[List[str]] = None
 
 
