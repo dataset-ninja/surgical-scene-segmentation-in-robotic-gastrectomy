@@ -15,7 +15,7 @@ from dataset_tools.templates import (
 ##################################
 PROJECT_NAME: str = "Surgical Scene Segmentation in Robotic Gastrectomy"
 PROJECT_NAME_FULL: str = "Surgical Scene Segmentation in Robotic Gastrectomy with Real and Synthetic Data"
-HIDE_DATASET = True  # set False when 100% sure about repo quality
+HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
