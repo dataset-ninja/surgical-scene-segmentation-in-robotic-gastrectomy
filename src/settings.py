@@ -13,8 +13,8 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = "Surgical Scene Segmentation in Robotic Gastrectomy"
-PROJECT_NAME_FULL: str = "Surgical Scene Segmentation in Robotic Gastrectomy with Real and Synthetic Data"
+PROJECT_NAME: str = "SISVSE"
+PROJECT_NAME_FULL: str = "SISVSE: Surgical Scene Segmentation Using Semantic Image Synthesis with a Virtual Surgery Environment Dataset"
 HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
@@ -27,9 +27,9 @@ CATEGORY: Category = Category.Medical(extra=Category.Robotics(), sensitive_conte
 CV_TASKS: List[CVTask] = [CVTask.InstanceSegmentation(),CVTask.SemanticSegmentation(),CVTask.ObjectDetection()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.InstanceSegmentation()]
 
-RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
+RELEASE_DATE: Optional[str] = "2022-12-19"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
-    RELEASE_YEAR: int = 2022
+    RELEASE_YEAR: int = None
 
 HOMEPAGE_URL: str = "https://conferences.miccai.org/2022/papers/489-Paper2739.html"
 # e.g. "https://some.com/dataset/homepage"
