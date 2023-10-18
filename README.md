@@ -1,3 +1,3 @@
-# Surgical Scene Segmentation in Robotic Gastrectomy with Real and Synthetic Data
+# SISVSE: Surgical Scene Segmentation Using Semantic Image Synthesis with a Virtual Surgery Environment Dataset
 
-Surgical Scene Segmentation in Robotic Gastrectomy is a dataset for instance segmentation, semantic segmentation, and object detection tasks.
+SISVSE is a dataset for instance segmentation, semantic segmentation, and object detection tasks.
