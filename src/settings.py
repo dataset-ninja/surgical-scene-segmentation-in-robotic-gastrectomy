@@ -24,14 +24,14 @@ LICENSE: License = License.BSD_3_Clause()
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Medical(),Industry.Robotics()]
 CATEGORY: Category = Category.Medical(extra=Category.Robotics(), sensitive_content=True)
 
-CV_TASKS: List[CVTask] = [CVTask.InstanceSegmentation(),CVTask.SemanticSegmentation(),CVTask.ObjectDetection()]
+CV_TASKS: List[CVTask] = [CVTask.InstanceSegmentation(), CVTask.SemanticSegmentation(), CVTask.ObjectDetection()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.InstanceSegmentation()]
 
 RELEASE_DATE: Optional[str] = "2022-12-19"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
     RELEASE_YEAR: int = None
 
-HOMEPAGE_URL: str = "https://conferences.miccai.org/2022/papers/489-Paper2739.html"
+HOMEPAGE_URL: str = "https://sisvse.github.io/"
 # e.g. "https://some.com/dataset/homepage"
 
 PREVIEW_IMAGE_ID: int = 6784916
@@ -43,7 +43,7 @@ GITHUB_URL: str = "https://github.com/dataset-ninja/surgical-scene-segmentation-
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = ["https://sisvse.github.io/"]
+DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = "https://sisvse.github.io/"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
@@ -57,12 +57,13 @@ REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"GitHub":"https:/
 
 CITATION_URL: Optional[str] = "https://link.springer.com/chapter/10.1007/978-3-031-16449-1_53"
 AUTHORS: Optional[List[str]] = ["Jihun Yoon", "SeulGi Hong", "Seungbum Hong", "Jiwon Lee", "Soyeon Shin", "Bokyung Park", "Nakjun Sung", "Hayeong Yu", "Sungjae Kim", "SungHyun Park", "Woo Jin Hyung", "Min-Kook Choi"]
+AUTHORS_CONTACTS: Optional[List[str]] = ["yjh2020@hutom.io", "sghong@hutom.io", "mkchoi@hutom.io"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = ["Hutom", "Yonsei University College of Medicine"]
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://hutom.io/", "https://medicine.yonsei.ac.kr/medicine-en/index.do"]
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
-SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {"__POSTTEXT__":"Also, the dataset contatins ***translation*** and ***syn*** tags for *sean_spade_translation* split, ***supercategory*** image tag (explore in supervisely advaned tool)"}
+SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {"__POSTTEXT__":"Also, the objects contain ***translation*** and ***syn*** tags for *sean_spade_translation* split, ***supercategory*** image tag. Explore them in the supervisely labeling tool"}
 TAGS: Optional[List[str]] = None
 
 
@@ -110,6 +111,7 @@ def get_settings():
     settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
