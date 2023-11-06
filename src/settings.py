@@ -21,7 +21,7 @@ HIDE_DATASET = False  # set False when 100% sure about repo quality
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.BSD_3_Clause()
-APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Medical(),Industry.Robotics()]
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Medical(), Industry.Robotics()]
 CATEGORY: Category = Category.Medical(extra=Category.Robotics(), sensitive_content=True)
 
 CV_TASKS: List[CVTask] = [CVTask.InstanceSegmentation(), CVTask.SemanticSegmentation(), CVTask.ObjectDetection()]
