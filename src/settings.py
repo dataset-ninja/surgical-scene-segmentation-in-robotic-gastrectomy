@@ -64,7 +64,7 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://hutom.io/", "https
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {"__POSTTEXT__":"Also, the objects contain ***translation*** and ***syn*** tags for *sean_spade_translation* split, ***supercategory*** image tag. Explore them in the supervisely labeling tool"}
-TAGS: Optional[List[str]] = None
+TAGS: Optional[List[str]] = ['synthetic']
 
 
 SECTION_EXPLORE_CUSTOM_DATASETS: Optional[List[str]] = None
