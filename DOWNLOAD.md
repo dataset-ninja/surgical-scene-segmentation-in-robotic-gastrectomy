@@ -1,6 +1,6 @@
 Dataset **SISVSE** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://www.dropbox.com/scl/fi/qkhon2c430obqriwc91v8/sisvse-DatasetNinja.tar?rlkey=ygbk2k74pyircbxosv0bnrwt6&dl=1)
+ [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogImZzOi8vYXNzZXRzLzI0ODFfU0lTVlNFL3Npc3ZzZS1EYXRhc2V0TmluamEudGFyIiwgInNpZyI6ICJoaWlsKytxd2ZPVDFacUV6M2ZrZzhKa25hZm9CSmd2d3lHN0pkMUtBY1pjPSJ9)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
